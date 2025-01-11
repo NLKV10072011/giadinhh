@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyến Đi 1 - Bộ Sưu Tập Gia Đình</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bộ Sưu Tập Gia Đình</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="gallery.html">Bộ Sưu Tập</a></li>
+                <li><a href="members.html">Thành Viên</a></li>
+                <li><a href="countdown.html">Đếm Ngược Tết</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Chuyến Đi Đến Đà Nẵng</h2>
+        <div class="trip-details">
+            <img src="img/icon-trip1.jpg" alt="Ảnh Chuyến Đi" class="trip-image">
+            <p>
+                Đây là chuyến đi gia đình đến Phố Cổ Hội An vào mùa hè năm 2023. .
+            </p>
+
+            <div class="trip-gallery">
+                <h3>Album ảnh</h3>
+                <img src="img/trip1_0.jpg" alt="Ảnh 1" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_1.jpg" alt="Ảnh 2" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_2.jpg" alt="Ảnh 3" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_3.jpg" alt="Ảnh 4" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_4.jpg" alt="Ảnh 5" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_5.jpg" alt="Ảnh 6" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_6.jpg" alt="Ảnh 7" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_7.jpg" alt="Ảnh 8" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_8.jpg" alt="Ảnh 9" class="thumbnail" onclick="openPopup(this)">
+                <img src="img/trip1_9.jpg" alt="Ảnh 10" class="thumbnail" onclick="openPopup(this)">
+            </div>
+        </div>
+    </main>
+
+    <!-- Popup khi nhấp vào ảnh -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">×</button>
+            <img id="popup-image" src="" alt="Ảnh phóng to">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gia Đình</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
